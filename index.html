@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6Servicios</title>
     <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
         .titulo{
             font-family: Arial, Helvetica, sans-serif;
             color: darkred;
@@ -15,7 +20,7 @@
             flex-wrap: wrap;
         }
         .servicio{
-            border: 1px solid red;
+            border: 2px solid red;
             width: 33%;
             text-align: center;
         }
@@ -23,6 +28,19 @@
             width: 40%;
         }
 
+        /*   para moviles      */
+        @media(max-width:600px){
+            .servicio{
+                width: 100%;
+            } 
+        } 
+        
+        /* para tablets*/
+        @media(min-width:601px) and (max-width:800px) {
+            .servicio{
+                width: 50%;
+            } 
+        }       
         
     </style>
 
